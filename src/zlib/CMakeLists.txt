@@ -1,0 +1,13 @@
+set(zlib_source_files
+    zlib/crc32.h
+    zlib/deflate.h
+    zlib/inffast.h
+    zlib/inflate.h
+    zlib/inftrees.h
+    zlib/zconf.h
+    zlib/zlib.h
+    zlib/gzguts.h
+    zlib/inffixed.h
+    zlib/trees.h
+    zlib/zutil.h
+    PARENT_SCOPE)
