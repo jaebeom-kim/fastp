@@ -439,7 +439,7 @@ void SingleEndProcessor::processorTask(ThreadConfig* config)
                 break;
             }
         } else {
-            usleep(100);
+            std::this_thread::sleep_for(std::chrono::microseconds(100));
         }
     }
     input->setConsumerFinished();        
