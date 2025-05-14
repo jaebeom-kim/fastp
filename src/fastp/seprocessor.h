@@ -9,6 +9,7 @@
 #include <condition_variable>
 #include <mutex>
 #include <thread>
+#include <chrono>
 #include "options.h"
 #include "threadconfig.h"
 #include "filter.h"
