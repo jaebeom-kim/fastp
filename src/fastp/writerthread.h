@@ -9,6 +9,8 @@
 #include "options.h"
 #include <atomic>
 #include <mutex>
+#include <thread>
+#include <chrono>
 #include "singleproducersingleconsumerlist.h"
 
 using namespace std;
