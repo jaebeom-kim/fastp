@@ -37,7 +37,8 @@ bool WriterThread::setInputCompleted() {
 void WriterThread::output(){
     SingleProducerSingleConsumerList<string*>* list =  mBufferLists[mWorkingBufferList];
     if(!list->canBeConsumed()) {
-        usleep(100);
+        std::this_thread::sleep_for(std::chrono::microseconds(100));
+        // usleep(100);
     } else {
         string* str = list->consume();
         mWriter1->write(str->data(), str->length());
