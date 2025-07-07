@@ -59,4 +59,6 @@ set(fastp_source_files
     fastp/writer.h
     fastp/writerthread.cpp
     fastp/writerthread.h
+    fastp/matcher.cpp
+    fastp/matcher.h
     PARENT_SCOPE)
