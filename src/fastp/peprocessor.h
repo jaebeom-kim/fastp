@@ -67,6 +67,7 @@ private:
     atomic_long mPackProcessedCounter;
     ReadPool* mLeftReadPool;
     ReadPool* mRightReadPool;
+    atomic_bool shouldStopReading;
 };
 
 
